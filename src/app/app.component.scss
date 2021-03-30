@@ -5,20 +5,24 @@
 	.header {
 		text-align: center;
 		font-size: 3em;
-		padding: 2.5rem;
+		padding: 2rem;
 		margin: 0;
 	}
 
 	form {
+		position: sticky;
+		top: 0px;
+
 		max-width: 1000px;
 		margin: 0rem auto;
-		padding: 2rem 1.5rem;
+		padding: 1.5rem 1rem;
 
 		.input-row {
 			display: flex;
 			justify-content: space-between;
 
 			border-radius: 4rem;
+			background: white;
 
 			input {
 				font-size: 1.125em;
@@ -41,8 +45,8 @@
 	}
 
 	.list {
-		max-width: 1250px;
-		padding: 1rem;
+		max-width: 1000px;
+		padding: 0rem 2rem;
 		margin: 0rem auto;
 
 		.gift-row {
@@ -96,7 +100,13 @@
 	}
 
 	.pairing {
+		position: sticky;
+		bottom: 0px;
+
 		text-align: center;
+
+		margin: 0rem auto;
+		padding: 1.5rem 1rem;
 
 		button {
 			border-radius: 2rem;
