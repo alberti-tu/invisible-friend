@@ -2,10 +2,17 @@
 	position: relative;
 	height: 100vh;
 
+	.header {
+		text-align: center;
+		font-size: 3em;
+		padding: 2.5rem;
+		margin: 0;
+	}
+
 	form {
 		max-width: 1000px;
 		margin: 0rem auto;
-		padding: 2rem 1rem;
+		padding: 2rem 1.5rem;
 
 		.input-row {
 			display: flex;
