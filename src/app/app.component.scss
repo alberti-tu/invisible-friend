@@ -1,0 +1,103 @@
+.app-container {
+	position: relative;
+	height: 100vh;
+
+	form {
+		max-width: 1000px;
+		margin: 0rem auto;
+		padding: 2rem 1rem;
+
+		.input-row {
+			display: flex;
+			justify-content: space-between;
+
+			border-radius: 4rem;
+
+			input {
+				font-size: 1.125em;
+				margin: 0.5rem 1rem;
+				padding: 0.5rem;
+				width: 100%;
+			}
+
+			button {
+				border-radius: 0rem 4rem 4rem 0rem;
+				background: #07bc4c;
+				border: none;
+				color: white;
+				text-transform: uppercase;
+				font-size: 1em;
+				max-width: 200px;
+				width: 60%;
+			}
+		}
+	}
+
+	.list {
+		max-width: 1250px;
+		padding: 1rem;
+		margin: 0rem auto;
+
+		.gift-row {
+			display: flex;
+			justify-content: space-between;
+
+			margin: 1rem 0rem;
+			width: 100%;
+
+			.gift-info {
+				overflow: hidden;
+				display: flex;
+				justify-content: left;
+				width: 100%;
+
+				div {
+					align-self: center;
+				}
+
+				img {
+					height: 2rem;
+					margin: 0rem 1rem;
+				}
+
+				.card {
+					border-radius: 1rem;
+					background: #f0f0f0;
+					padding: 1rem 2rem;
+				}
+			}
+
+			.gift-action {
+				align-self: center;
+				max-width: 32px;
+				width: 60%;
+
+				img {
+					cursor: pointer;
+					height: 2rem;
+		
+					&:hover {
+						transform: scale(1.25);
+					}
+		
+					&:active {
+						transform: translateY(0.125rem);
+					}
+				}
+			}
+		}
+	}
+
+	.pairing {
+		text-align: center;
+
+		button {
+			border-radius: 2rem;
+			border: none;
+			background: #eeea0f;
+			text-transform: uppercase;
+			font-size: 1em;
+			padding: 1rem 2rem;
+		}
+	}
+}

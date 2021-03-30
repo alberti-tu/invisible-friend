@@ -1,0 +1,32 @@
+<div class="app-container">
+    <form [formGroup]="form" (submit)="saveUser()">
+        <div class="input-row shadow">
+            <input formControlName="user" type="text" [placeholder]="'Añadir participante'">
+
+            <button type="submit" [disabled]="!form.valid">
+                <span>Guardar</span>
+            </button>
+        </div>
+    </form>
+
+	<div class="list">
+		<div *ngFor="let item of userList" class="gift-row">
+			<div class="gift-info">
+				<div class="card">{{ item.from }}</div>
+				<div *ngIf="item.show == true">
+					<img src="assets/icons/eye-open.svg">
+				</div>
+				<div class="card" *ngIf="item.show">{{ item.to }}</div>
+			</div>
+
+			<div *ngIf="item.to != ''" class="gift-action">
+				<img src="assets/icons/eye-open.svg" *ngIf="item.show == false" (click)="showGift(item)">
+				<img src="assets/icons/eye-close.svg" *ngIf="item.show == true" (click)="deleteUser(item)">
+			</div>
+		</div>
+	</div>
+
+	<div class="pairing">
+		<button class="shadow" (click)="startPairing()">Sorteo</button>
+	</div>
+</div>
